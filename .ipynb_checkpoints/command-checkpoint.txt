@@ -1,0 +1,4 @@
+python t-preprocess.py \
+  --input_path /home/tmax/bowonko/pretrain/data/preprocess/test_data/210406_고등학교_국어.txt \
+  --preprocessor_type lm \
+  --output_dir /home/tmax/bowonko/pretrain/data/preprocess/result/
