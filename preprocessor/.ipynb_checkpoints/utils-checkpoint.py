@@ -82,6 +82,7 @@ class LanguageModelPreprocessor:
         return result
 
     def preprocess(self):
+        nltk.download('punkt')
         sentences = []
         with open(self.input_path,'r',encoding='utf-8') as f:
             #한 line에 paragraph가 있다고 가정 (문장이 잘 안 잘린 경우가 있다고 가정하고 한 번 더 분절)
