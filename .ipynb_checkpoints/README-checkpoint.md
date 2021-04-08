@@ -1,4 +1,4 @@
-# NLP Preprocessor
+# NLP T-Preprocessor
 ##### TMAX A&C, AE1-3, BowonKo
 
 T-Preprocessor is a processor for NLP preprocessing.
