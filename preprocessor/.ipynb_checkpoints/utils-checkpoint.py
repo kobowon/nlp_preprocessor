@@ -18,6 +18,8 @@ class LanguageModelPreprocessor:
     def __init__(self, args):
         if not args.input_path:
             raise ValueError("전처리할 파일 경로를 입력하지 않았습니다")
+        if not args.output_dir:
+            raise ValueError("출력 디렉토리를 입력하지 않았습니다")
         
         #내부적으로 사용되는 변수 : 언더바 하나(_) : python은 다른 언어에 있는 접근 제어자(public, private, protected)가 없음, 모두 public
         self._model = fasttext.load_model(os.getcwd() + '/lang_detect_fasttext.ftz')
